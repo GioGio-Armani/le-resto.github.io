@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "font1";
+  src: url(/assets/font/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(/assets/font/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "font3";
+  src: url(/assets/font/Poppins-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "font1";
+  background-color: #21201e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "font3";
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.font2 {
+  font-family: "font2";
+  text-transform: none;
+  color: #a67245;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: url(/assets/img/bg-slider-06.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+header .navbar {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .navbar .logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 17%;
+}
+header .navbar .logo h1 {
+  color: #eeeeee;
+}
+header .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+header .navbar ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+header .navbar ul li a {
+  padding: 10px 15px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+header .navbar ul li a:hover {
+  color: #a67245;
+  border-bottom: 2px solid #a67245;
+}
+@media screen and (max-width: 850px) {
+  header .navbar ul {
+    display: none;
+  }
+}
+header .navbar .icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  width: 13%;
+  color: #eeeeee;
+}
+header .navbar .icons i {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+header .navbar .icons i:hover {
+  color: #a67245;
+}
+@media screen and (max-width: 850px) {
+  header .navbar {
+    padding: 25px 40px 0;
+  }
+}
+header .hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hero .hero-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+header .hero .hero-text h1 {
+  font-size: 4rem;
+  color: #eeeeee;
+  letter-spacing: 12px;
+  line-height: 0.8;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 850px) {
+  header .hero .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+header .hero .hero-text h2 {
+  font-size: 3.8rem;
+  letter-spacing: normal;
+  font-weight: 400;
+  line-height: 0.6;
+}
+@media screen and (max-width: 850px) {
+  header .hero .hero-text h2 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+  }
+}
+header .hero .hero-text img {
+  width: 35px;
+  margin-bottom: 50px;
+}
+header .hero .hero-text p {
+  font-size: 0.95rem;
+  color: #eeeeee;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.discover {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.discover .left-part {
+  text-align: center;
+  background-color: #eeeeee;
+  color: #21201e;
+}
+.discover .left-part .flex-dashed {
+  margin: 20px;
+  padding: 20px;
+  border: 1px dashed #a67245;
+}
+.discover .left-part h2 {
+  font-size: 2.5rem;
+  line-height: 0.7;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.discover .left-part h3 {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.discover .left-part .couvert {
+  width: 35px;
+  margin-bottom: 30px;
+}
+.discover .left-part p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+.discover .left-part img {
+  border-radius: 50%;
+  width: 100px;
+}
+.discover .right-part {
+  background: url(/assets/img/store-01.jpg) center/cover;
+}
+@media screen and (max-width: 768px) {
+  .discover .right-part {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .discover {
+    grid-template-columns: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */

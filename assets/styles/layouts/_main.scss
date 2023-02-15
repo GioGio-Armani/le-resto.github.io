@@ -1,0 +1,57 @@
+.discover {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .left-part {
+    text-align: center;
+    background-color: $color1;
+    color: $color2;
+
+    .flex-dashed {
+      margin: 20px;
+      padding: 20px;
+      border: 1px dashed $color3;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      line-height: 0.7;
+      font-weight: 300;
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      line-height: 1;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    .couvert {
+      width: 35px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 35px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+    }
+  }
+
+  .right-part {
+    background: url(/assets/img/store-01.jpg) center/cover;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 100%;
+  }
+}
