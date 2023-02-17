@@ -207,6 +207,18 @@ header .hero .hero-text p {
   border-radius: 50%;
   width: 100px;
 }
+.discover .left-part .cooker {
+  text-transform: none;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.discover .left-part .poste {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: #b6b6b6;
+}
 .discover .right-part {
   background: url(/assets/img/store-01.jpg) center/cover;
 }
@@ -219,4 +231,226 @@ header .hero .hero-text p {
   .discover {
     grid-template-columns: 100%;
   }
+}
+
+.menu {
+  padding: 0 20px 150px;
+}
+.menu h3 {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 500;
+  margin: 70px 0 30px;
+  text-align: center;
+}
+.menu .couvert {
+  display: block;
+  margin: 0 auto 30px;
+  width: 35px;
+}
+.menu .menu-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu ul li {
+  font-size: 1.25rem;
+  margin: 0 0 35px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  color: #eeeeee;
+  transition: all 0.3s ease-in-out;
+}
+.menu ul li:hover {
+  border-bottom: 1px solid #a67245;
+  color: #a67245;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+  .menu ul li {
+    font-size: 0.9rem;
+  }
+}
+
+.carte {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background: #eeeeee;
+  padding: 20px 0;
+  border-top: 5px solid #a67245;
+}
+.carte .left-cart {
+  width: 50%;
+  padding: 0 20px;
+}
+.carte .right-cart {
+  width: 50%;
+  padding: 0 20px;
+}
+.carte .plat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10px;
+  border-bottom: 1px dashed #b6b6b6;
+}
+.carte .plat .img-text {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+  width: 85%;
+}
+.carte .plat .img-text img {
+  border-radius: 50%;
+}
+.carte .plat .img-text h4 {
+  font-weight: 200;
+  font-size: 1.1rem;
+  letter-spacing: -1px;
+  color: #21201e;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+.carte .plat .img-text p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #21201e;
+}
+@media screen and (max-width: 768px) {
+  .carte .plat .img-text p {
+    font-size: 1.2rem;
+  }
+}
+.carte .plat .price {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #a67245;
+}
+@media screen and (max-width: 768px) {
+  .carte {
+    flex-direction: column;
+  }
+  .carte .left-cart {
+    width: 100%;
+  }
+  .carte .right-cart {
+    width: 100%;
+  }
+}
+
+.section-menu {
+  position: relative;
+}
+.section-menu .background-fun {
+  background: url(/assets/img/bg-menu-01.jpg) center/cover;
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.gird {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  max-width: 1300px;
+  margin: 80px auto 150px;
+}
+.gird .left-reservation {
+  background: #000;
+  padding: 30px;
+}
+.gird .left-reservation .dashed {
+  border: 1px dashed #eeeeee;
+  padding: 40px;
+}
+.gird .left-reservation h3 {
+  font-size: 1.7rem;
+  line-height: 0.8;
+  font-weight: 900;
+  text-align: center;
+  color: #eeeeee;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+.gird .left-reservation h3 .font2 {
+  font-size: 2.9rem;
+  font-weight: 300;
+  color: #a67245;
+}
+.gird .left-reservation img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.gird .left-reservation h4 {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 300;
+  text-align: center;
+  color: #a67245;
+  margin-bottom: 20px;
+}
+.gird .left-reservation h4:last-child {
+  margin-bottom: 0px;
+}
+.gird .left-reservation p {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  color: #eeeeee;
+  margin-bottom: 50px;
+}
+.gird .right-reservation {
+  background: #eeeeee;
+  padding: 30px;
+}
+.gird .right-reservation h3 {
+  font-size: 1.7rem;
+  line-height: 0.8;
+  font-weight: 900;
+  text-align: center;
+  color: #a67245;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+.gird .right-reservation h3 .font2 {
+  font-size: 2.9rem;
+  font-weight: 300;
+  color: #eeeeee;
+}
+.gird .right-reservation img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.gird .right-reservation h4 {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 300;
+  text-align: center;
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+.gird .right-reservation h4:last-child {
+  margin-bottom: 0px;
+}
+.gird .right-reservation p {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  color: #a67245;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=index.css.map */
