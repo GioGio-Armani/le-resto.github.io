@@ -417,40 +417,47 @@ header .hero .hero-text p {
   padding: 30px;
 }
 .gird .right-reservation h3 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   line-height: 0.8;
   font-weight: 900;
   text-align: center;
-  color: #a67245;
-  letter-spacing: 3px;
   margin-bottom: 40px;
 }
 .gird .right-reservation h3 .font2 {
   font-size: 2.9rem;
   font-weight: 300;
-  color: #eeeeee;
 }
 .gird .right-reservation img {
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.gird .right-reservation h4 {
-  font-size: 1.25rem;
-  line-height: 1;
-  font-weight: 300;
-  text-align: center;
-  color: #eeeeee;
-  margin-bottom: 20px;
+.gird .right-reservation .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 60px;
+  gap: 20px;
 }
-.gird .right-reservation h4:last-child {
-  margin-bottom: 0px;
+.gird .right-reservation .form input,
+.gird .right-reservation .form select,
+.gird .right-reservation .form input:active,
+.gird .right-reservation .form input:focus-visible,
+.gird .right-reservation .form select:active,
+.gird .right-reservation .form select:focus-visible {
+  background: transparent;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: #b6b6b6 2px solid;
 }
-.gird .right-reservation p {
+.gird .right-reservation button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-size: 1.1rem;
-  line-height: 1.2;
-  font-weight: 300;
-  text-align: center;
-  color: #a67245;
-  margin-bottom: 50px;
+  font-weight: 700;
+  background: #21201e;
+  color: #eeeeee;
 }/*# sourceMappingURL=index.css.map */
