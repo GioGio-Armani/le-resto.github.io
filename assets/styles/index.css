@@ -725,7 +725,12 @@ header .hero .hero-text p {
 
 .section-about {
   position: relative;
-  padding: 200px 0 300px;
+  padding: 200px 20px 300px;
+}
+@media screen and (max-width: 768px) {
+  .section-about {
+    padding: 0 20px 200px;
+  }
 }
 .section-about .background-about {
   position: absolute;
@@ -773,4 +778,26 @@ header .hero .hero-text p {
 .about .metier {
   color: #a67245;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .about p {
+    font-size: 1rem;
+  }
+  .about h3 {
+    font-size: 1.5rem;
+  }
+}
+
+footer {
+  background: url(/assets/img/bg-footer.jpg) center/cover;
+}
+footer .footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .left-footer {
+  width: 50%;
+}
+footer .right-footer {
+  width: 50%;
 }/*# sourceMappingURL=index.css.map */
