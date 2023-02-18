@@ -68,3 +68,11 @@ a {
   justify-content: center;
   align-items: center;
 }
+@keyframes animlink {
+  50% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

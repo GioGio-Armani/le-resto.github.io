@@ -33,13 +33,29 @@ header {
         font-size: 0.9rem;
 
         a {
-          padding: 10px 15px;
+          padding: 10px 0;
           border-bottom: 2px solid transparent;
           transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: $color3;
+            transition: 0.2s ease-in-out infinite;
+            transform-origin: left;
+            left: 0;
+            bottom: 0;
+          }
 
           &:hover {
             color: $color3;
-            border-bottom: 2px solid $color3;
+            &:hover::after {
+              animation: animlink 1.4s ease-in-out infinite;
+              width: 100%;
+            }
           }
         }
       }
