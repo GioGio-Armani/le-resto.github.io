@@ -351,12 +351,13 @@ header .hero .hero-text p {
   border-radius: 50%;
 }
 .carte .plat .img-text h4 {
-  font-weight: 200;
+  font-weight: 900;
   font-size: 1.1rem;
   letter-spacing: -1px;
   color: #21201e;
   margin-bottom: 5px;
   line-height: 1;
+  font-family: "font1", sans-serif;
 }
 .carte .plat .img-text p {
   font-size: 1.3rem;
@@ -626,6 +627,7 @@ header .hero .hero-text p {
   margin-bottom: 30px;
   text-transform: none;
   text-indent: 15px;
+  font-family: "font1", sans-serif;
 }
 .event .gird-event .left-event .text-event p {
   font-size: 1rem;
@@ -696,6 +698,7 @@ header .hero .hero-text p {
   text-transform: none;
   text-align: center;
   margin-top: 35%;
+  font-family: "font1", sans-serif;
 }
 .event .gird-event .event3 .text-event3 p {
   font-size: 1rem;
@@ -718,4 +721,42 @@ header .hero .hero-text p {
 }
 .event .gird-event .event3 .text-event3 a:hover {
   color: #a67245;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background: #eeeeee;
+  padding: 80px 30px;
+  position: relative;
+}
+.about img {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  width: 80px;
+}
+.about p {
+  font-size: 1.3rem;
+  line-height: 2;
+  font-weight: 300;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.about h3 {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: none;
+  font-family: "font1", sans-serif;
+}
+.about .metier {
+  color: #a67245;
+  margin: 0;
 }/*# sourceMappingURL=index.css.map */
