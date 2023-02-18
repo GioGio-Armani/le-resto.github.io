@@ -219,11 +219,18 @@
     z-index: -1;
   }
 }
+.reservation {
+  padding: 0 20px;
+}
 .gird {
   display: grid;
   grid-template-columns: 30% 70%;
   max-width: 1300px;
   margin: 80px auto 150px;
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: 100%;
+  }
 
   .left-reservation {
     background: #000;
@@ -312,6 +319,11 @@
       padding: 0 60px;
       gap: 30px;
 
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 0;
+      }
+
       input,
       select,
       input:active,
@@ -352,6 +364,220 @@
       &:hover {
         background: $color3;
         transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.event {
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+  h3 {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 40px;
+    color: $color1;
+    letter-spacing: 2px;
+
+    .font2 {
+      font-size: 2.9rem;
+      font-weight: 300;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .gird-event {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+      "e1 e1 e3"
+      "e2 e2 e3";
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .event1 {
+      grid-area: e1;
+    }
+
+    .event2 {
+      grid-area: e2;
+    }
+
+    .event3 {
+      grid-area: e3;
+    }
+
+    .left-event {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      background: $color1;
+
+      .img-event {
+        width: 40%;
+        position: relative;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          margin: 0;
+          height: 100%;
+        }
+      }
+
+      .date-event {
+        position: absolute;
+        background: $color2;
+        left: 20;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+          font-size: 2.2rem;
+          line-height: 1;
+          font-weight: 300;
+          color: $color1;
+        }
+
+        p {
+          font-size: 1.2rem;
+          line-height: 1;
+          font-weight: 300;
+          color: $color1;
+        }
+      }
+
+      .text-event {
+        h4 {
+          font-size: 1.5rem;
+          line-height: 1;
+          font-weight: 300;
+          color: $color2;
+          margin-bottom: 30px;
+          text-transform: none;
+          text-indent: 15px;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.2;
+          font-weight: 300;
+          color: $grey1;
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: 1rem;
+          font-weight: 700;
+          color: $color2;
+          transition: 0.3s ease-in-out;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+
+          &:hover {
+            color: $color3;
+          }
+        }
+      }
+    }
+
+    .event3 {
+      background: url(/assets/img/event-03.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .text-event3 {
+        background: $color1;
+        height: 88%;
+        width: 88%;
+        position: relative;
+
+        .date-event3 {
+          position: absolute;
+          background: $color2;
+          left: 20;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          height: 100px;
+          width: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h4 {
+            font-size: 2.2rem;
+            line-height: 1;
+            font-weight: 300;
+            color: $color1;
+            margin: 0;
+          }
+
+          p {
+            font-size: 1.2rem;
+            line-height: 1;
+            font-weight: 300;
+            color: $color1;
+            margin: 0;
+          }
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          line-height: 1;
+          font-weight: 300;
+          color: $color2;
+          margin-bottom: 30px;
+          text-transform: none;
+          text-align: center;
+          margin-top: 35%;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.2;
+          font-weight: 300;
+          color: $grey1;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+
+        a {
+          font-size: 1rem;
+          font-weight: 700;
+          color: $color2;
+          transition: 0.3s ease-in-out;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          display: block;
+          text-align: center;
+          margin-top: 70px;
+
+          &:hover {
+            color: $color3;
+          }
+        }
       }
     }
   }
