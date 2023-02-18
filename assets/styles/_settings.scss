@@ -71,6 +71,15 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.flex2 {
+  display: flex;
+  justify-content: center;
+}
+.flex3 {
+  display: flex;
+  align-items: center;
+}
 @keyframes animlink {
   50% {
     transform: scaleX(0.2);
